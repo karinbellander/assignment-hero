@@ -1,10 +1,40 @@
 html {
   background: blue;
   height:auto;
+  font-family: 'Domine', serif;
+  font-weight: bold;
 }
 
 body {
   margin: 0;
+  width: 100%;
+}
+
+nav {
+  position: absolute;
+  z-index: 1;
+  background-color: transparent;
+  color: white;
+  width: 100%;
+  font-family: 'Cutive Mono', monospace;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2vw;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  padding: 0px 10px 0px 10px;
+}
+
+li a:hover {
+  text-shadow: 3px 3px black;
 }
 
 video {
@@ -15,28 +45,53 @@ video {
   display: block;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
 div {
   width: 100%;
   height: auto;
   position: relative;
-  background-color: green;
+  background-color: yellow;
 }
 
-h1 {
+
+h1{
   position: absolute;
   color: white;
   left: 50%;
   transform: translate(-50%, 0);
-  font-size: 80px;
-  top: 20%;
+  text-align: center;
+  margin: 0;
 }
+
+h1 {
+  font-size: 7vw;
+  line-height: 1em;
+  top: 30%;
+  width: 60%;
+  text-shadow: 4px 4px black;
+}
+
+
 
 button {
   position: absolute;
-  top :60%;
+  top :70%;
   left: 50%;
   transform: translate(-50%, 0);
-  width:100px;
+  width:35%;
+  height: 8%;
+  border-radius: 4vw;
+  background-color: transparent;
+  box-shadow: none;
+  color: white;
+  border: 0.3vw solid white;
+  font-size: 2.5vw;
+  font-family: serif;
+  font-family: 'Cutive Mono', monospace;
 }
 
 @media (min-width: 0px) and (max-width: 768px) {
@@ -71,7 +126,7 @@ button {
 @media (min-width: 1024px) {
 
   html {
-    background: yellow;
+    background: green;
   }
 
   .video_small {
