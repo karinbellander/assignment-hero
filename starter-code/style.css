@@ -1,0 +1,62 @@
+html {
+  background: blue;
+  height:auto;
+}
+
+body {
+  margin: 0;
+}
+
+video {
+  width:100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+
+@media (min-width: 0px) and (max-width: 768px) {
+
+  .video_medium {
+    display: none;
+  }
+
+  .video_large {
+    display: none;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  html {
+    background: red;
+  }
+
+  .video_small {
+    display: none;
+  }
+
+  .video_large {
+    display: none;
+  }
+
+
+}
+
+@media (min-width: 1024px) {
+
+  html {
+    background: yellow;
+  }
+
+  .video_small {
+    display: none;
+  }
+
+  .video_medium {
+    display: none;
+  }
+
+}
