@@ -15,6 +15,29 @@ video {
   display: block;
 }
 
+div {
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-color: green;
+}
+
+h1 {
+  position: absolute;
+  color: white;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 80px;
+  top: 20%;
+}
+
+button {
+  position: absolute;
+  top :60%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width:100px;
+}
 
 @media (min-width: 0px) and (max-width: 768px) {
 
