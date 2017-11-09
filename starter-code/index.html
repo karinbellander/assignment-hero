@@ -8,22 +8,34 @@
   </head>
   <body>
 
-  <video class="video_small" autoplay controls>
+  <video class="video_small" autoplay controls loop muted>
     <source src="videos/SampleVideo_360x240_1mb.mp4" type="video/mp4">
     <source src="videos/SampleVideo_360x240_1mb.webm" type="video/webm">
       <p>This browser doesn´t support video</p>
   </video>
 
-  <video class="video_medium" autoplay controls>
+  <video class="video_medium" autoplay controls loop muted>
     <source src="videos/SampleVideo_720x480_1mb" type="video/mp4">
     <source src="videos/SampleVideo_720x480_1mb.webm" type="video/webm">
       <p>This browser doesn´t support video</p>
   </video>
 
-  <video class="video_large" autoplay controls>
+  <video class="video_large" autoplay controls loop muted>
     <source src="videos/SampleVideo_1280x720_1mb.mp4" type="video/mp4">
     <source src="videos/SampleVideo_1280x720_1mb.webm" type="video/webm">
       <p>This browser doesn´t support video</p>
+  </video>
+
+  <video autoplay controls loop muted>
+    <source src="videos/SampleVideo_360x240_1mb.mp4" type="video/mp4" and (max-width:768px)>
+    <source src="videos/SampleVideo_360x240_1mb.webm" type="video/webm" and (max-width:768px)>
+      <p>This browser doesn´t support video</p>
+    <source src="videos/SampleVideo_720x480_1mb" type="video/mp4" and (max-width:1024px)>
+    <source src="videos/SampleVideo_720x480_1mb.webm" type="video/webm" and (max-width:1024px)>
+        <p>This browser doesn´t support video</p>
+    <source src="videos/SampleVideo_1280x720_1mb.mp4" type="video/mp4">
+    <source src="videos/SampleVideo_1280x720_1mb.webm" type="video/webm">
+          <p>This browser doesn´t support video</p>
   </video>
 
   </body>
